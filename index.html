@@ -23,12 +23,28 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-links-1">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Health</a></li>
                 <li><a href="#">Locations</a></li>
                 <li><a href="#">Shops</a></li>
+                <li><a href="#">Become a retailer</a></li>
+                <li><a href="#">Recipe</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </ul>
+        <div class="nav-links-1">
+            <ul>
+                <li class="hideOnMobile"><a href="#" class="active">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Health</a></li>
+                <li class="hideOnMobile"><a href="#">Locations</a></li>
+                <li class="hideOnMobile"><a href="#">Shops</a></li>
             </ul>
         </div>
         <div class="logo">
@@ -38,12 +54,15 @@
         </div>
         <div class="nav-links-2">
             <ul>
-                <li><a href="#">Become a retailer</a></li>
-                <li><a href="#">Recipe</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li class="hideOnMobile"><a href="#">Become a retailer</a></li>
+                <li class="hideOnMobile"><a href="#">Recipe</a></li>
+                <li class="hideOnMobile"><a href="#">Contact us</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26" viewBox="0 96 960 960" width="26">
+                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                        </svg></a></li>
             </ul>
         </div>
-
         <div class="icons" id="cart-count">
             <img class="cart" src="assets/shopping-bag.png" alt="cart-icon">
         </div>
